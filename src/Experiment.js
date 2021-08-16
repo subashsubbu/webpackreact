@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {ExperimentWindow} from 'jspsych-react';
+import {ExperimentWindow} from 'jspsych-react-cra';
 import { timelineFactory } from './timeline';
 import callbackImageKeyboardResponsePlugin from './callbackImageKeyboardResponsePlugin';
 import { LoginForm } from './LoginForm'
