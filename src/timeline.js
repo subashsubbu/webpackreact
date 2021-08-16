@@ -1,4 +1,4 @@
-import jsPsych from "jspsych";
+import jsPsych from "jspsych-react";
 import callbackImageKeyboardResponsePlugin, {
     jspsychReact,
 } from "jspsych-react";
