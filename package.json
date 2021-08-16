@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "jspsych-react": "github:openexp/jspsych-react#v0.4.0",
+    "jspsych-react-cra": "git+https://git@github.com/neurotype/jspsych-react-cra.git",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
