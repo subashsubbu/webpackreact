@@ -1,12 +1,12 @@
 import React from 'react'
 import { LoginForm } from './LoginForm'
-import  {Experiment}  from './Experiment'
+import { Experiments } from './Experiment'
 
 export function App() {
 	return (
 		<div>
-			<Experiment/>
-			<LoginForm/>
+			<Experiments />
+			{/* <LoginForm/> */}
 
 		</div>
 	)

@@ -1,41 +1,24 @@
-import React, {Component} from 'react'
-import { ExperimentWindow } from 'jspsych-react';
+import React, { Component } from 'react'
+import {ExperimentWindow} from 'jspsych-react';
 import { timelineFactory } from './timeline';
 import callbackImageKeyboardResponsePlugin from './callbackImageKeyboardResponsePlugin';
+import { LoginForm } from './LoginForm'
 
-// export default class Experiment extends Component {
-//   callback = (targetID) => console.log(targetID);
-//   timeline = timelineFactory(callback);
-  
-//   render() {
-   
-//     return (
-//       <div>
-//         {/* <ExperimentWindow
-//           settings={{ timeline }}
-//           plugins={{ callbackImageKeyboardResponsePlugin }}
-//         /> */}
-//       </div>
-//     );
-//   }
-// }
+export function Experiments() {
+  const callback = (targetID) => console.log(targetID);
+  const timeline = timelineFactory(callback);
 
 
-const callback = (targetID) => console.log(targetID);
-const timeline = timelineFactory(callback);
+  return (
+    <div>
+      <ExperimentWindow
+        settings={{ timeline }}
+        plugins={{ callbackImageKeyboardResponsePlugin }}
+      />
+      {/* <LoginForm/> */}
 
-export function Experiment() {
-
-
-    return (
-        <div>
-            <ExperimentWindow
-                settings={{ timeline }}
-                // plugins={{ callbackImageKeyboardResponsePlugin }}
-            />
-
-        </div>
-    )
+    </div>
+  )
 }
 
 
